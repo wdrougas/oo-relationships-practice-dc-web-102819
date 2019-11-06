@@ -22,5 +22,4 @@ class Trip
         self.guest
     end
 
-
 end

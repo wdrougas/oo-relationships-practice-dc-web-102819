@@ -29,15 +29,15 @@ class Guest
         self.trips.count
     end
 
-    def self.find_all_by_name(name)
-        @@all.select do |guest|
-            guest.name == name
-        end
-    end
-
     def self.pro_traveler
         @@all.select do |guest|
             guest.trip_count > 1
+        end
+    end
+
+    def self.find_all_by_name(name)
+        @@all.select do |guest|
+            guest.name == name
         end
     end
 

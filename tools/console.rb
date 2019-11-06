@@ -29,44 +29,44 @@ end
 
 
 
-seattle = Listing.new("Seattle")
-cleveland = Listing.new("Cleveland")
-dallas = Listing.new("Dallas")
+# seattle = Listing.new("Seattle")
+# cleveland = Listing.new("Cleveland")
+# dallas = Listing.new("Dallas")
 
-scott = Guest.new("Scott")
-will = Guest.new("Will")
-sarah = Guest.new("Sarah")
+# scott = Guest.new("Scott")
+# will = Guest.new("Will")
+# sarah = Guest.new("Sarah")
 
-trip1 = Trip.new(cleveland, will)
-trip2 = Trip.new(seattle, scott)
-trip3 = Trip.new(seattle, sarah)
-trip4 = Trip.new(dallas, will)
+# trip1 = Trip.new(cleveland, will)
+# trip2 = Trip.new(seattle, scott)
+# trip3 = Trip.new(seattle, sarah)
+# trip4 = Trip.new(dallas, will)
 
-will.trips
-will.listings
-
-
-seattle.trips
-seattle.guests
+# will.trips
+# will.listings
 
 
-# trip1.listings
-# trip1.guests
+# seattle.trips
+# seattle.guests
+
+
+# # trip1.listings
+# # trip1.guests
 
 
 
 
-# flour = Ingredient.new("Flour", 10)
-# butter = Ingredient.new("Butter", 15)
-# sugar = Ingredient.new("Sugar", 20)
+flour = Ingredient.new("Flour", 10)
+butter = Ingredient.new("Butter", 15)
+sugar = Ingredient.new("Sugar", 20)
 
-# cake = Dessert.new("Cake", flour)
-# pie = Dessert.new("Pie", butter)
-# pudding = Dessert.new("Pudding", sugar)
+cake = Dessert.new("Cake", flour)
+pie = Dessert.new("Pie", butter)
+pudding = Dessert.new("Pudding", sugar)
 
-# bakery1 = Bakery.new("Bakery A", cake)
-# bakery2 = Bakery.new("Bakery B", pie)
-# bakery3 = Bakery.new("Bakery C", pudding)
+bakery1 = Bakery.new("Bakery A", cake)
+bakery2 = Bakery.new("Bakery B", pie)
+bakery3 = Bakery.new("Bakery C", pudding)
 
 
 
