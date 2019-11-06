@@ -10,17 +10,17 @@ end
 # passenger1 = Passenger.new("Jasur")
 # passenger2 = Passenger.new("Eunice")
 
-# ride1 = Ride.new(5, passenger1, driver1)
-# ride2 = Ride.new(7, passenger2, driver2)
-# ride3 = Ride.new(6, passenger1, driver2)
-# ride4 = Ride.new(4, passenger2, driver1)
-# ride5 = Ride.new(200, passenger1, driver1)
-# ride6 = Ride.new(300, passenger1, driver1)
+# ride1 = Ride.new(passenger1, driver1, 5.0)
+# ride2 = Ride.new(passenger2, driver2, 7.0)
+# ride3 = Ride.new(passenger1, driver2, 6.0)
+# ride4 = Ride.new(passenger2, driver1, 4.0)
+# ride5 = Ride.new(passenger1, driver1, 200.0)
+# ride6 = Ride.new(passenger1, driver1, 300.0)
 
 
+# ride1.passenger
 # passenger1.rides
 # driver1.rides
-# ride1.passenger
 # Ride.average_distance
 # Driver.mileage_cap(100)
 # Passenger.premium_members
@@ -50,8 +50,23 @@ seattle.trips
 seattle.guests
 
 
-trip1.listings
-trip1.guests
+# trip1.listings
+# trip1.guests
+
+
+
+
+# flour = Ingredient.new("Flour", 10)
+# butter = Ingredient.new("Butter", 15)
+# sugar = Ingredient.new("Sugar", 20)
+
+# cake = Dessert.new("Cake", flour)
+# pie = Dessert.new("Pie", butter)
+# pudding = Dessert.new("Pudding", sugar)
+
+# bakery1 = Bakery.new("Bakery A", cake)
+# bakery2 = Bakery.new("Bakery B", pie)
+# bakery3 = Bakery.new("Bakery C", pudding)
 
 
 

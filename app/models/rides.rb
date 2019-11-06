@@ -1,15 +1,13 @@
-require 'pry'
-
 class Ride
 
     attr_reader :passenger, :driver, :distance
 
     @@all = []
 
-    def initialize(distance, passenger, driver)
-        @distance = distance
+    def initialize(passenger, driver, distance)
         @passenger = passenger
         @driver = driver
+        @distance = distance
         @@all << self
     end
 
@@ -26,14 +24,10 @@ class Ride
     end
 
     def self.average_distance
-        rides = @@all.map do |ride|
-            # ghost = 0
-            # puts rides
-            # puts ghost
-            # These variables 
+         x = @@all.collect do |ride|
             ride.distance
         end
-        (rides.sum / rides.length).to_f
+        x.sum / x.count
     end
 
 end

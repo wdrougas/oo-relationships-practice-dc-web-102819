@@ -21,21 +21,23 @@ class Passenger
 
     def drivers
         self.rides.collect do |ride|
-            ride.driver
+            ride.drivers
         end
     end
 
     def total_distance
-        distances = self.rides.collect do |ride|
+        distance_array = self.rides.collect do |ride|
             ride.distance
         end
-        distances.sum
+        distance_array.sum
     end
 
     def self.premium_members
-        premium = @@all.select do |passenger|
+        @@all.select do |passenger|
             passenger.total_distance > 100
         end
     end
+
+
 
 end

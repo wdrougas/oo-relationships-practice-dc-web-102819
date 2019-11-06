@@ -1,5 +1,3 @@
-require 'pry'
-
 class Driver
 
     attr_reader :name
@@ -27,18 +25,11 @@ class Driver
         end
     end
 
-    def total_distance_driven
-        miles = self.rides.collect do |ride|
-            ride.distance
+    def self.mileage_cap(distance)
+        @@all.select do |ride|
+            ride.distance > distance
         end
-        miles.sum
     end
 
-    def self.mileage_cap(distance)
-        self.all.select do |driver|
-            driver.total_distance_driven > distance
-            binding.pry
-        end
-    end
 
 end
